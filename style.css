@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+     width: 400px;
+     height: min-content;
+     background-color: rgb(230, 107, 107);
+     border-radius: 12px;
+     padding: 28px;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 80%;
+    font: 20px;
+    text-transform: capitalize;
+    color: black;
+    padding: 12px 16px;
+    border-radius: 14px;
+}
+
+.search-box input::placeholder{
+    color: black;
+}
+
+.search-box button{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-box button:hover{
+    color: aliceblue;
+    background-color: black;
+}
+
+.weather-body img{
+    width: 50%;    
+}
+.weather-body{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather-body .temperature{
+     font-size: 40px;
+     font-weight: 800;
+     position: relative;
+
+}
+.weather-body #description{
+    font-size:20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+ 
+.weather-body .humidity{
+      font-size: 25px;
+      font-weight: 600;
+      /* width: 100%; */
+}
+.weather-body .wind-speed{
+    font-size: 25px;
+    font-weight: 600; 
+    /* width: 10%; */
+}
+.weather-degree{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+
+}
+.weather-details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.on-error-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  display: none;
+}
+.on-error-display #error_img{
+    width: 50%;
+
+}
